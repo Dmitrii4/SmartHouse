@@ -50,8 +50,7 @@ public class Conditioner {
 //        if (currentTemperature <= maxTemperature) {
 //            if (currentTemperature >= minTemperature) {
 //                this.currentTemperature = currentTemperature;
-//            }
-//        }
+//            }//        }
 //    }
 
     public boolean isOn() {
