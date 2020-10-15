@@ -1,9 +1,9 @@
 package ru.netology;
 
 public class Conditioner {
-    private long maxTemperature;
-    private long minTemperature;
-    private long currentTemperature;
+    public long maxTemperature;
+    public long minTemperature;
+    public long currentTemperature;
 
     public long getMaxTemperature() {
         return maxTemperature;
@@ -26,26 +26,32 @@ public class Conditioner {
     }
 
     public void setCurrentTemperature(long currentTemperature) {
-        if (currentTemperature>maxTemperature)
+        if (currentTemperature > maxTemperature) {
             return;
-        if (currentTemperature<minTemperature)
+        }
+        if (currentTemperature < minTemperature) {
             return;
-        this.currentTemperature=currentTemperature;
+        }
+        this.currentTemperature = currentTemperature;
     }
 
-    void decreaseCurrentTemperature() {
-        if (currentTemperature<=minTemperature)
+    public void decreaseCurrentTemperature() {
+        if (currentTemperature <= minTemperature) {
             return;
-        if (currentTemperature>=maxTemperature)
+        }
+        if (currentTemperature >= maxTemperature) {
             return;
-        --currentTemperature;
+        }
+        currentTemperature--;
     }
 
-    void increaseCurrentTemperature() {
-        if (currentTemperature<=minTemperature)
+    public void increaseCurrentTemperature() {
+        if (currentTemperature <= minTemperature) {
             return;
-        if (currentTemperature>=maxTemperature)
+        }
+        if (currentTemperature >= maxTemperature) {
             return;
-        ++currentTemperature;
+        }
+        currentTemperature++;
     }
 }
