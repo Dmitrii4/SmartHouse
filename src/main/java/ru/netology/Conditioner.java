@@ -36,7 +36,7 @@ public class Conditioner {
     }
 
     public void increaseCurrentTemperature() {
-        if (currentTemperature > maxTemperature) {
+        if (currentTemperature >= maxTemperature) {
             return;
         }
         currentTemperature++;
